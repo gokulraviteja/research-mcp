@@ -2,12 +2,11 @@
   "mcpServers": {
     "research-mcp": {
       "command": "python3",
-      "args": ["server.py"],
-      "cwd": "/Users/gokul/Documents/git-repos/research-mcp",
+      "args": ["/Users/gokul/Documents/git-repos/research-mcp/server.py"],
       "env": {
-        "PYTHONUNBUFFERED": "1"
-      },
-      "disabled": false
+        "PYTHONUNBUFFERED": "1",
+        "PYTHONPATH": "/Users/gokul/Documents/git-repos/research-mcp"
+      }
     }
   }
 }
