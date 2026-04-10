@@ -1,0 +1,35 @@
+# Research MCP Server Environment Configuration
+#
+# SETUP INSTRUCTIONS:
+# 1. Copy this file to .env:
+#    cp env_example.txt .env
+#
+# 2. Add your Twitter cookies below (see "HOW TO GET COOKIES" section)
+#
+# 3. Run tests or server:
+#    python test_manual.py      # Quick manual test
+#    python server.py            # Start the MCP server
+#    pytest tests/ -v            # Run pytest tests
+
+# Twitter API Credentials
+# =======================
+# Get these cookies from your browser's developer tools:
+#
+# HOW TO GET COOKIES:
+# 1. Go to https://twitter.com or https://x.com and log in
+# 2. Open Developer Tools (Press F12)
+# 3. Click on "Application" tab (or "Storage" in Firefox)
+# 4. In the left sidebar: Cookies → twitter.com
+# 5. Find these cookies:
+#    - ct0       (CSRF token)
+#    - auth_token (Session token)
+# 6. Copy their values and paste below
+
+TWITTER_CT0=paste_your_ct0_here
+TWITTER_AUTH_TOKEN=paste_your_auth_token_here
+
+# ⚠️ SECURITY NOTES:
+# - Never commit this file to git (it's in .gitignore)
+# - These cookies give access to your Twitter account
+# - Cookies expire after a few weeks - you'll need fresh ones if tests fail
+# - Keep this file private and secure

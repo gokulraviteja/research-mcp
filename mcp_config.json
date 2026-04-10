@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "research": {
+      "command": "python",
+      "args": ["server.py"],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}
